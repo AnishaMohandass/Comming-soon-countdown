@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    overflow: hidden;
+    /* font-family: cursive; */
+    color: lightcyan;
+    /* background: gray;  */
+}
+
+.landing{
+    position: relative;
+    background-image: url(pic1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    text-align: center; 
+    padding-top: 40px;
+}
+ 
+h1{
+    font-size: 60px;
+    color:rgb(224, 224, 8);
+    font-family: Cooper;
+    letter-spacing: 8px;
+    word-spacing: 8px;
+}
+
+p{
+    font-family: cursive;
+    color: white; 
+    letter-spacing: 4px;
+    word-spacing: 4px;
+}
+
+.commingsoon{
+    font-family: Segoe Print;
+    font-size: 40px;
+    color: rgb(161, 161, 255);
+}
+
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: rgb(0, 211, 248);
+    font-family: cursive;
+}
+
+.countdown div{
+    border: white solid 1px;
+    border-radius: 20px;
+    background: black;
+    opacity: 0.8;
+    padding: 18px;
+    margin: 8px;
+    font-size: 25px;
+}
+
+.countdown span{
+    display: block;
+    color: rgb(238, 238, 105);
+}
+
+.countdown div:hover{
+    background: darkolivegreen;
+    color: black;
+}
+
+@media(max-width: 515px){
+    h1
+    {
+        font-size: 30px;
+    }
+
+    img
+    {
+        height: 100px;
+        width: 100px;
+    }
+    p
+    {
+        display: none;
+    }
+    .commingsoon
+    {
+        font-size: 20px;
+    }
+
+    .countdown
+    {
+        flex-direction: column;
+    }
+    .countdown div
+    {
+        font-size: 16px;
+        margin: 5px;
+        padding: 2px;
+    }
+}
+    @media(max-height: 700px)
+    {
+        h1
+    {
+        font-size: 20px;
+    }
+
+    img
+    {
+        height: 80px;
+        width: 80px;
+    }
+    p
+    {
+        display: none;
+    }
+    .commingsoon
+    {
+        font-size: 16px;
+    }
+
+    .countdown
+    {
+        flex-direction: column;
+    }
+    .countdown div
+    {
+        font-size: 16px;
+        margin: 5px;
+        padding: 2px;
+    }
+}
+
